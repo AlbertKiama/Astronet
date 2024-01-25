@@ -31,7 +31,7 @@ body{
 }
 .head {
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 300;
     color: #000;
     margin-bottom: 18px;
 }
@@ -737,5 +737,100 @@ body{
     cursor: pointer;
 }
 .extra:hover {
+    color: var(--fourth-color);
+}
+
+/*=========================================Contacts===========================*/
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.contact-form {
+    width: 50%;
+    padding: 60px 40px;
+    background-color: var(--first-color);
+}
+.contact-form h2 {
+    font-size: 30px;
+    color: var(--third-color);
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+}
+.contact-form .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contact-form .inputBox input,
+.contact-form .inputBox textarea {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 1px solid var(--third-color);
+    box-sizing: border-box;
+    border-radius: 15px;
+    outline: none;
+    resize: none;
+    background-color: transparent;
+}
+.contact-form .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 14px;
+    margin: 10px 13px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contact-form .inputBox input:focus ~ span,
+.contact-form .inputBox input:valid ~ span,
+.contact-form .inputBox textarea:focus ~ span,
+.contact-form .inputBox textarea:valid ~ span {
+    color: var(--third-color);
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contact-form .inputBox input[type="submit"] {
+    width: fit-content;
+    background: var(--third-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.contact-details {
+    width: 50%;
+    padding: 60px 40px;
+}
+.c-info {
+    padding: 30px 0;
+}
+.c-info h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--sixth-color);
+    padding: 8px 0;
+}
+.c-info p {
+    line-height: 1.7;
+    letter-spacing: 1px;
+    max-width: 59ch;
+    color: var(--sixth-color);
+    font-size: 16px;
+}
+.c-info a {
+    display: inline-block;
+    color: var(--third-color);
+    text-decoration: none;
+}
+.c-info a:hover {
     color: var(--fourth-color);
 }
