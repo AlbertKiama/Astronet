@@ -770,7 +770,7 @@ body{
     padding: 5px 10px;
     font-size: 16px;
     margin: 10px 0;
-    border: 1px solid var(--third-color);
+    border: 1px solid #7070709f;
     box-sizing: border-box;
     border-radius: 15px;
     outline: none;
