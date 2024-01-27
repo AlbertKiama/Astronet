@@ -21,7 +21,7 @@ body{
     position: relative;
 }
 .container {
-    padding: 0 10%;
+    padding: 0 8%;
 }
 .text {
     font-family: "Roboto", sans-serif;
@@ -554,6 +554,9 @@ body{
     flex-direction: row;
     margin-top: 15px;
 }
+.slogan-details {
+    flex: 1;
+}
 .slogan-details span {
     font-size: 43px;
     color: var(--third-color);
@@ -568,6 +571,8 @@ body{
     color: var(--sixth-color);
     font-weight: 350;
     text-wrap: wrap;
+    width: 80%;
+    padding-bottom: 12px;
 }
 .slogan-details a {
     text-decoration: none;
@@ -843,83 +848,136 @@ body{
     margin-top: 30px;
 }
 .starter {
-    font-size: 33px;
+    font-size: 30px;
     font-weight: 300;
     color: #fff;
 }
 
 /*=====================================footer========================*/
 .footer {
-    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 10;
-    background-color: var(--sixth-color);
+    background-color: #07111bda;
+    padding-top: 5%;
 }
 .foonter-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
     height: 280px;
 }
 .f-col {
-    width: calc((100% - 50px) / 3);
+    flex: 1;
     margin: 16px 10px;
 }
-.f-col h2 {
-    font-size: 17px;
+.f-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex: 2.5;
+    margin: 16px 10px;
+}
+.f-col-1 ul {
+    list-style-type: none;
+    li {
+        margin-bottom: 6px;
+        a {
+            text-decoration: none;
+            color: #777;
+            font-size: 16px;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+.f-col-2 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    li {
+        padding-right: 35px;
+        a {
+            text-decoration: none;
+            i {
+                font-size: 15px;
+                font-weight: 500;
+                color: #777;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.f-head {
+    font-size: 18px;
     line-height: 22px;
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 .f-col p {
     font-size: 15px;
     font-weight: 250;
     line-height: 1.6;
     color: #838383;
+    padding-right: 12px;
 }
-.f-col:nth-child(2) {
-    padding: 0 -22px 0 22px;
-}
-.f-col:nth-child(2) ul {
-    list-style: none;
-    li{
-        margin-bottom: 8px;
-        a{
-            text-decoration: none;
-            color: #b9b9b9;
-            font-size: 16px;
-            font-weight: 250;
-            &:hover{
-                color: #fff;
-            }
+.f-col-3 .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    input[type="email"] {
+        height: 40px;
+        flex: 2;
+        color: #bbb;
+        padding: 5px 10px;
+        font-size: 16px;
+        margin: 10px 0;
+        border: 1px solid #7070709f;
+        border-right: none;
+        box-sizing: border-box;
+        border-radius: 15px 0 0 15px;
+        outline: none;
+        resize: none;
+        background-color: transparent;
+        &::placeholder {
+            color: #666;
         }
     }
-
-}
-.f-col:nth-child(3) ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    li{
+    button {
+        height: 40px;
+        flex: 1;
+        padding: 5px 10px;
+        outline: none;
+        border: none;
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: var(--third-color);
+        color: var(--first-color);
+        border-radius: 0  15px 15px 0;
         cursor: pointer;
-        list-style-type: none;
-        margin-left: -50px;
-        a{
-          text-decoration: none;
-            i{
-                width: 24px;
-                height: 24px;
-                vertical-align: middle;
-                fill: #dcdcdc;
-                }
-                 &:hover{
-                    color:#fff;
-                 }
-            }
+        &:active,&:focus{
+            opacity: 0.8;
+        }
     }
+}
+.copyright {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 18px 0;
+    background-color: #07111b4d;
+    font-size: 14px;
+    color: #9b9b9b;
+    line-height: 20px;
+    text-align: center;
 }
