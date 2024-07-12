@@ -83,6 +83,11 @@ body{
 .socials i:hover {
     color: var(--fifth-color);
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 .header {
     background: var(--first-color);
     padding: 10px 0;
