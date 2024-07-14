@@ -103,6 +103,9 @@ body{
     justify-content: baseline;
     align-items: center;
 }
+.mobile-nav-toggle {
+    display: none;
+}
 .logo .let1 {
     color: var(--fifth-color);
     font-size: 49px;
@@ -988,4 +991,63 @@ body{
     color: #9b9b9b;
     line-height: 20px;
     text-align: center;
+}
+
+/*==========================Media responsiveness===========================*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    p {
+        line-height: 20px;
+        font-size: 15px;
+    }
+    #home {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+    }
+    .container {
+        padding: 30px;
+    }
+    .primary-navigation {
+        position: fixed;
+        inset: 0 0 0 50%;
+        padding: min(20vh, 10rem) 2em;
+        background: #69000088;
+        backdrop-filter: blur(2rem);
+        flex-direction: column;
+        --gap: 2em;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+    }
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0%);
+    }
+    @supports (backdrop-filter: blur(1rem)) {
+        .primary-navigation {
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+        }
+    }
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background: transparent;
+        background-image: url('Image/menu.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+        width: 2.5rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+    }
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url("Image/close.jpg");
+    }
+
 }

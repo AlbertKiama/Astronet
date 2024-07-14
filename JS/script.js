@@ -1,9 +1,28 @@
+/*===========Functionality for sticky menu==========*/
+
+window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
+/*===================Functionality for my home module=================*/
+
 let hello = document.getElementById('hello');
 
         window.addEventListener('scroll', function(){
             let value = window.scrollY;
             hello.style.marginBottom = value * 1.56 + 'px';
         });
+
+/*===========Functionality for Testimonials==========*/       
 
 var dot = document.getElementsByClassName("dot");
 var slide = document.getElementById("slide");
@@ -36,3 +55,20 @@ var slide = document.getElementById("slide");
             }
             this.classList.add("active");
         }
+
+        /*==================Functionality for my side menu==================*/
+
+const primaryNav = document.querySelector('.primary-navigation');
+const navToggle = document.querySelector('.mobile-nav-toggle');
+
+navToggle.addEventListener('click', () => {
+    const visibility = primaryNav.getAttribute("data-visible");
+
+    if (visibility === "false") {
+        primaryNav.setAttribute("data-visible",'true');
+        navToggle.setAttribute('aria-expanded', 'true');
+        } else if (visibility === "true") {
+            primaryNav.setAttribute("data-visible", 'false');
+            navToggle.setAttribute('aria-expanded', 'false');
+        }
+})

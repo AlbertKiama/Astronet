@@ -50,7 +50,10 @@
                     <div class="let2">Net</div>
                     <div class="let1" style="font-size: 26px; padding-top: 8px;">.</div>
                 </div>
-                <ul>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                </button>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#services">Services</a></li>
@@ -624,19 +627,5 @@
     </div>
 </div>
 <script src="JS/script.js"></script>
-<script>
-    window.onscroll = function() {myFunction()};
-    
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-    
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-    </script>
 </body>
 </html>
