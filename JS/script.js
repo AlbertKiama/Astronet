@@ -56,19 +56,26 @@ var slide = document.getElementById("slide");
             this.classList.add("active");
         }
 
-        /*==================Functionality for my side menu==================*/
+/*==================Functionality for my side menu==================*/
 
-const primaryNav = document.querySelector('.primary-navigation');
-const navToggle = document.querySelector('.mobile-nav-toggle');
 
-navToggle.addEventListener('click', () => {
-    const visibility = primaryNav.getAttribute("data-visible");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-    if (visibility === "false") {
-        primaryNav.setAttribute("data-visible",'true');
-        navToggle.setAttribute('aria-expanded', 'true');
-        } else if (visibility === "true") {
-            primaryNav.setAttribute("data-visible", 'false');
-            navToggle.setAttribute('aria-expanded', 'false');
-        }
-})
+     hamburger.addEventListener("click", mobileMenu);
+
+     function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+       }
+
+// when we click on hamburger icon its close 
+
+const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+       hamburger.classList.remove("active");
+       navMenu.classList.remove("active");
+    }
