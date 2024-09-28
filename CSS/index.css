@@ -97,6 +97,11 @@ body{
     z-index: 9999;
     box-shadow: 0 5px 20px var(--fourth-color);
 }
+.logo a img {
+    height: 60px;
+    margin-left: -15px;
+}
+/*
 .logo {
     text-transform: capitalize;
     display: flex;
@@ -117,7 +122,7 @@ body{
     color: var(--fourth-color);
     font-size: 24px;
     font-family: 'Berkshire Swash';
-}
+}*/
 .material {
     color: var(--fourth-color);
     font-size: 18px;
