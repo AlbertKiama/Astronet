@@ -1011,20 +1011,20 @@ body{
     }
     .nav-menu {
         position: fixed;
-        right: 0;
-        top: 8rem;
+        right: -100%;
+        top: 10.5rem;
         flex-direction: column;
         background-color: var(--first-color);
         width: 50%;
-        height: 100vh;
+        height: 90vh;
         text-align: center;
         transition: 0.3s;
     }
     .nav-menu.active {
-        right: 100%;
+        right: 0;
     }
     .nav-item {
-        margin: 1.5rem 0;
+        margin: 1rem 0;
     }
     .hamburger {
         display: block;
