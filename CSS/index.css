@@ -44,6 +44,12 @@ body{
     font-size: 18px;
     margin-bottom: 18px;
 }
+.sub-title p {
+    padding: 0 12%;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+}
 
 /*===========================================Header=========================================*/
 
@@ -285,12 +291,6 @@ body{
 }
 .sub-title {
     text-align: center;
-}
-.sub-title p {
-    padding: 0 12%;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.5;
 }
 .sub-work {
     display: grid;
@@ -1006,12 +1006,16 @@ body{
         font-weight: 300;
     }
     .head {
-        font-size: 33px;
+        font-size: 31px;
         margin-bottom: 15px;
     }
     .txt {
         font-size: 15px;
         margin-bottom: 18px;
+    }
+    .sub-title p {
+        font-size: 16px;
+        padding: 0 10%;
     }
     .contact span {
         font-size: 17px;
@@ -1103,5 +1107,17 @@ body{
     .row-cont ul li i {
         font-size: 11px;
         margin-right: 10px;
+    }
+    .work-layer span {
+        font-size: 35px;
+    }
+    .work-layer h4 {
+        font-size: 15px;
+        margin-top: 8px;
+        line-height: 1.5;
+    }
+    .btn {
+        padding: 4px 8px;
+        border-radius: 6px;
     }
 }
