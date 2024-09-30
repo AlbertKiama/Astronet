@@ -343,6 +343,38 @@ body{
     opacity: 1;
     overflow: hidden;
 }
+.button {
+    position: relative;
+}
+.button a {
+    text-decoration: none;
+    color: var(--third-color);
+    font-size: 13px;
+}
+.btn {
+    display:flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    justify-content: center;
+    color: var(--fourth-color);
+    border: none;
+    padding: 5px 10px;
+    background-color: var(--first-color);
+    border: 1px solid var(--third-color);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.btn:hover {
+    color: var(--first-color);
+    background-color: var(--third-color);
+}
+.btn span {
+    font-size: 1em;
+    font-weight: 500;
+    margin-left: .5em;
+}
 .work-1 {
     background-color: var(--fourth-color);
     display: flex;
@@ -388,38 +420,6 @@ body{
 .work-3 a:hover {
     color: var(--second-color);
 }
-.button {
-    position: relative;
-}
-.button a {
-    text-decoration: none;
-    color: var(--third-color);
-    font-size: 13px;
-}
-.btn {
-    display:flex;
-    align-items: center;
-    width: fit-content;
-    margin-left: auto;
-    justify-content: center;
-    color: var(--fourth-color);
-    border: none;
-    padding: 5px 10px;
-    background-color: var(--first-color);
-    border: 1px solid var(--third-color);
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all .3s;
-}
-.btn:hover {
-    color: var(--first-color);
-    background-color: var(--third-color);
-}
-.btn span {
-    font-size: 1em;
-    font-weight: 500;
-    margin-left: .5em;
-}
 
 /*===================================testimony=================*/
 
@@ -437,9 +437,9 @@ body{
 }
 .user-text p {
     color: var(--fourth-color);
-    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1.8;
     text-align: center;
 }
@@ -1119,5 +1119,31 @@ body{
     .btn {
         padding: 4px 8px;
         border-radius: 6px;
+    }
+    .work-container {
+        padding: 30px 20px;
+    }
+    .work-1 {
+        padding: 25px 20px;
+    }
+    .work-1 img {
+        width: 35%;
+        margin: 30px 0;
+    }
+    .work-3 h3 {
+        font-size: 15px;
+        margin-bottom: 4px;
+    }
+    .small-txt {
+        font-size: 12px;
+        line-height: 1.15;
+        margin-bottom: 5px;
+    }
+    .work-3 a {
+        font-size: 11px;
+    }
+
+    .user-text p {
+        font-size: 18px;
     }
 }
