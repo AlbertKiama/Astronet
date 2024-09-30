@@ -1143,7 +1143,21 @@ body{
         font-size: 11px;
     }
 
+    .mySwiper {
+        height: 200px;
+    }
     .user-text p {
-        font-size: 18px;
+        font-size: 17px;
+        padding: 0 60px;
+    }
+    .slide-col {
+        height: 200px;
+    }
+    .indicator {
+        bottom: -25px;
+    }
+
+    .services {
+        margin-top: 120px;
     }
 }
