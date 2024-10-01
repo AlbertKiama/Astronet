@@ -722,6 +722,7 @@ body{
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 4px;
+    flex-wrap: wrap;
 }
 .blogger {
     font-size: 15px;
@@ -1230,5 +1231,33 @@ body{
     }
     .mate-socials a {
         padding: 0 3px;
+    }
+
+    .blog-title {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .blogger {
+        font-size: 12px;
+        margin-right: 3px;
+    }
+    .dot-1 {
+        margin: 3px;
+    }
+    .blog-date {
+        font-size: 11px;
+        margin: 3px;
+    }
+    .news {
+        margin-left: 3px;
+        font-size: 12px;
+        
+    }
+    .blog-card p {
+        font-size: 13px;
+        padding: 8px 0;
+    }
+    .extra {
+        font-size: 13px;
     }
 }
