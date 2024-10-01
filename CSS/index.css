@@ -563,7 +563,7 @@ body{
 }
 .about-p {
     font-size: 17px;
-    font-weight: 250;
+    font-weight: 270;
     line-height: 1.4;
     letter-spacing: 1.2px;
     max-width: 90%;
@@ -1179,6 +1179,33 @@ body{
         padding: 6px 0;
     }
     .service-description a {
+        font-size: 14px;
+    }
+
+    .about-text {
+        flex-basis: 55%;
+        padding: 0;
+    }
+    .about-img {
+        flex-basis: 45%;
+    }
+    .about-p {
+        font-size: 14px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    .slogan-details span {
+        font-size: 33px;
+    }
+    .slogan-title {
+        font-size: 14px;
+    }
+    .slogan-details p {
+        font-size: 13px;
+        width: 90%;
+        padding-bottom: 8px;
+    }
+    .slogan-details a {
         font-size: 14px;
     }
 }
