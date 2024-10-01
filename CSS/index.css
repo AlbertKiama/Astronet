@@ -664,6 +664,8 @@ body{
     font-size: 13px;
     margin: 3px 4px;
     font-weight: 500;
+    align-items: center;
+    justify-content: center;
 }
 .fa-facebook-f {
     padding: 2px 3px;
@@ -675,6 +677,8 @@ body{
     padding: 2px 4px;
     background-color: #5e5e5e;
     border-radius: 50%;
+    align-items: center;
+    justify-content: center;
 }
 .mate-socials a:hover {
     background-color: var(--sixth-color);
@@ -1207,5 +1211,24 @@ body{
     }
     .slogan-details a {
         font-size: 14px;
+    }
+    .team-img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 30px;
+    }
+    .mate {
+        font-size: 15px;
+    }
+    .team-card p {
+        font-size: 13px;
+        padding: 17px;
+    }
+    .mate-socials i {
+        font-size: 12px;
+        margin: 2px 3px;
+    }
+    .mate-socials a {
+        padding: 0 3px;
     }
 }
