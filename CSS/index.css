@@ -1260,4 +1260,41 @@ body{
     .extra {
         font-size: 13px;
     }
+
+    .getStarted {
+        padding: 30px 0;
+        margin-top: 30px;
+        .starter {
+            font-size: 22px;
+        }
+    }
+    .footer {
+        padding-top: 4%;
+        .foonter-content {
+            height: 250px;
+            .f-col {
+                margin: 14px 8px;
+                p {
+                    font-size: 14px;
+                    padding-right: 10px;
+                }
+            }
+            .f-row {
+                margin: 14px 4px;
+                .f-col-1 ul li {
+                        margin-bottom: 5px;
+                        a {
+                            font-size: 14px;
+                        }
+                }
+                .f-col-2 ul li {
+                    padding-right: 26px;
+                }
+            }
+            .f-head {
+                font-size: 15px;
+                margin-bottom: 14px;
+            }
+        }
+    }
 }
