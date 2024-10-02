@@ -1295,6 +1295,24 @@ body{
                 font-size: 15px;
                 margin-bottom: 14px;
             }
+            .f-col-3 .input-box {
+                margin-top: 9px;
+                input[type="email"] {
+                    height: 30px;
+                    padding: 4px 8px;
+                    font-size: 14px;
+                }
+                button {
+                    height: 30px;
+                    padding: 4px 8px;
+                    font-size: 14px;
+                }
+           }
+        }
+        .copyright {
+            padding: 16px 0;
+            font-size: 13px;
+            line-height: 18px;
         }
     }
 }
