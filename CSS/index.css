@@ -1277,6 +1277,28 @@ body{
                     font-size: 10px;
                 }
             }
+            span {
+                padding: 4px 0;
+                font-size: 12px;
+                margin: 8px 10px;
+            }
+            input[type="submit"] {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+    }
+    .contact-content .contact-details {
+        padding: 80px 30px;
+        .c-info {
+            padding: 10px 0;
+            h4 {
+                font-size: 16px;
+                padding: 5px 0;
+            }
+            p {
+                font-size: 14px;
+            }
         }
     }
 
