@@ -1260,6 +1260,25 @@ body{
     .extra {
         font-size: 13px;
     }
+    .contact-content .contact-form {
+        padding: 40px 20px;
+        h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .inputBox {
+            margin-top: 8px;
+            input, textarea {
+                padding: 4px 8px;
+                font-size: 14px;
+                margin: 8px 0;
+                &:focus ~ span,
+                &:valid ~ span {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
 
     .getStarted {
         padding: 30px 0;
