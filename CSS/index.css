@@ -1361,3 +1361,46 @@ body{
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 0 3%;
+    }
+    .logo a img {
+        height: 50px;
+        margin-left: -5px;
+    }
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: var(--first-color);
+        width: 60%;
+        height: 100vh;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-menu.active {
+        right: 0;
+    }
+    .nav-item {
+        margin: 1rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
