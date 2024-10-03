@@ -899,7 +899,7 @@ body{
         }
         .f-row {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: flex-start;
             flex: 2.5;
             margin: 16px 10px;
@@ -919,23 +919,23 @@ body{
             }
             .f-col-2 ul {
                 display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-                list-style-type: none;
-                li {
-                    padding-right: 35px;
-                    a {
-                        text-decoration: none;
-                        i {
-                            font-size: 15px;
-                            font-weight: 500;
-                            color: #777;
-                            &:hover {
-                                color: #fff;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    list-style-type: none;
+                    li {
+                        padding-right: 35px;
+                        a {
+                            text-decoration: none;
+                            i {
+                                font-size: 15px;
+                                font-weight: 500;
+                                color: #777;
+                                &:hover {
+                                    color: #fff;
+                                }
                             }
                         }
                     }
-                }
             }
         }
     }
@@ -1321,7 +1321,7 @@ body{
                 }
             }
             .f-row {
-                margin: 14px 4px;
+                margin: 14px 10px;
                 .f-col-1 ul li {
                         margin-bottom: 5px;
                         a {
