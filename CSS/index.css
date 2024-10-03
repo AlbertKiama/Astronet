@@ -899,11 +899,12 @@ body{
         }
         .f-row {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: flex-start;
-            flex: 2.5;
+            flex: 3;
             margin: 16px 10px;
             .f-col-1 ul {
+                flex: 1;
                 list-style-type: none;
                 li {
                     margin-bottom: 6px;
@@ -919,24 +920,68 @@ body{
             }
             .f-col-2 ul {
                 display: flex;
-                    align-items: center;
-                    justify-content: space-evenly;
-                    list-style-type: none;
-                    li {
-                        padding-right: 35px;
-                        a {
-                            text-decoration: none;
-                            i {
-                                font-size: 15px;
-                                font-weight: 500;
-                                color: #777;
-                                &:hover {
-                                    color: #fff;
-                                }
+                flex: 1;
+                align-items: center;
+                justify-content: space-evenly;
+                list-style-type: none;
+                li {
+                    padding-right: 35px;
+                    a {
+                        text-decoration: none;
+                        i {
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: #777;
+                            &:hover {
+                                color: #fff;
                             }
                         }
                     }
+                }
             }
+            .f-col-3 .input-box {
+                    position: relative;
+                    width: 100%;
+                    margin-top: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    input[type="email"] {
+                        height: 40px;
+                        flex: 2;
+                        color: #bbb;
+                        padding: 5px 10px;
+                        font-size: 16px;
+                        margin: 10px 0;
+                        border: 1px solid #7070709f;
+                        border-right: none;
+                        box-sizing: border-box;
+                        border-radius: 15px 0 0 15px;
+                        outline: none;
+                        resize: none;
+                        background-color: transparent;
+                        &::placeholder {
+                            color: #666;
+                        }
+                    }
+                    button {
+                        height: 40px;
+                        flex: 1;
+                        padding: 5px 10px;
+                        outline: none;
+                        border: none;
+                        box-sizing: border-box;
+                        font-size: 16px;
+                        background-color: var(--third-color);
+                        color: var(--first-color);
+                        border-radius: 0  15px 15px 0;
+                        cursor: pointer;
+                        &:active,&:focus{
+                            opacity: 0.8;
+                        }
+                    }
+                }
+           /* } */
         }
     }
 }
@@ -947,48 +992,6 @@ body{
     letter-spacing: 1px;
     color: #fff;
     margin-bottom: 16px;
-}
-.f-col-3 .input-box {
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    input[type="email"] {
-        height: 40px;
-        flex: 2;
-        color: #bbb;
-        padding: 5px 10px;
-        font-size: 16px;
-        margin: 10px 0;
-        border: 1px solid #7070709f;
-        border-right: none;
-        box-sizing: border-box;
-        border-radius: 15px 0 0 15px;
-        outline: none;
-        resize: none;
-        background-color: transparent;
-        &::placeholder {
-            color: #666;
-        }
-    }
-    button {
-        height: 40px;
-        flex: 1;
-        padding: 5px 10px;
-        outline: none;
-        border: none;
-        box-sizing: border-box;
-        font-size: 16px;
-        background-color: var(--third-color);
-        color: var(--first-color);
-        border-radius: 0  15px 15px 0;
-        cursor: pointer;
-        &:active,&:focus{
-            opacity: 0.8;
-        }
-    }
 }
 .copyright {
     position: relative;
@@ -1272,15 +1275,16 @@ body{
                 padding: 4px 8px;
                 font-size: 14px;
                 margin: 8px 0;
+                border-radius: 10px;
                 &:focus ~ span,
                 &:valid ~ span {
                     font-size: 10px;
                 }
             }
             span {
-                padding: 4px 0;
+                padding: 5px 0;
                 font-size: 12px;
-                margin: 8px 10px;
+                margin: 10px;
             }
             input[type="submit"] {
                 font-size: 14px;
