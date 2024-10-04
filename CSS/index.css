@@ -162,7 +162,6 @@ body{
     margin: 5px 0;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    /* background-color: #101010; */
     background-color: var(--fourth-color);
 }
 
@@ -177,7 +176,7 @@ body{
     justify-content: center;
 }
 .home img {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -192,7 +191,6 @@ body{
     text-align: center;
     align-items: center;
     justify-content: center;
-    z-index: 100;
 }
 .hello h1 {
     font-size: 60px;
