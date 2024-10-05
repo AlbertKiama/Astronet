@@ -1378,7 +1378,7 @@ body{
     }
     .sub-title p {
         font-size: 16px;
-        padding: 0 7%;
+        padding: 0 4%;
     }
     .contact span {
         font-size: 14px;
@@ -1498,5 +1498,31 @@ body{
     }
     .slide-col {
         height: 300px;
+    }
+
+    .services {
+        margin-top: 100px;
+    }
+    .service-container {
+        display: grid;
+        grid-template: repeat(6, 1fr) / 1fr;
+        grid-gap: 40px;
+        padding: 40px;
+    }
+    .service-icon {
+        padding-right: 20px;
+    }
+    .service-icon span {
+        font-size: 48px;
+    }
+    .service-title {
+        font-size: 18px;
+    }
+    .service-description p {
+        font-size: 15px;
+        padding: 8px 0;
+    }
+    .service-description a {
+        font-size: 14px;
     }
 }
