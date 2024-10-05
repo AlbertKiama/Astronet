@@ -1361,8 +1361,35 @@ body{
 }
 
 @media screen and (max-width: 767px) {
+    
+    .text {
+        font-size: 12px;
+    }
     .container {
         padding: 0 3%;
+    }
+    .head {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .txt {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    .sub-title p {
+        font-size: 14px;
+        padding: 0 7%;
+    }
+    .contact span {
+        font-size: 14px;
+    }
+    .email {
+        margin: 0 11px 0 5px;
+        font-size: 10px;
+    }
+    .socials i {
+        font-size: 14px;
+        margin: 0 8px;
     }
     .logo a img {
         height: 50px;
@@ -1371,7 +1398,7 @@ body{
     .nav-menu {
         position: fixed;
         right: -100%;
-        top: 5rem;
+        top: 4.5rem;
         flex-direction: column;
         background-color: var(--first-color);
         width: 60%;
@@ -1389,7 +1416,10 @@ body{
         display: block;
         cursor: pointer;
     }
-
+    .bar {
+        width: 22px;
+        height: 3px;
+    }
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
