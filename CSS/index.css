@@ -1457,4 +1457,14 @@ body{
         font-size: 11px;
         margin-right: 13px;
     } 
+
+    .sub-work {
+        display: grid;
+        grid-template: repeat(6, 1fr) / 1fr;
+        grid-gap: 40px;
+        padding: 50px;
+    }
+    .button {
+        margin-top: -30px;
+    }
 }
