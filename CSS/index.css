@@ -1373,7 +1373,7 @@ body{
         margin-bottom: 10px;
     }
     .txt {
-        font-size: 15px;
+        font-size: 14px;
         margin-bottom: 15px;
     }
     .sub-title p {
@@ -1466,5 +1466,37 @@ body{
     }
     .button {
         margin-top: -30px;
+    }
+
+    .work-1 {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 20px;
+    }
+    .work-container {
+        padding: 30px 20px;
+    }
+    .work-1 img {
+        width: 100%;
+        margin: 0;
+    }
+    .work-3 h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .small-txt {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .mySwiper {
+        height: 300px;
+    }
+    .user-text p {
+        font-size: 16px;
+        padding: 0 30%;
+    }
+    .slide-col {
+        height: 300px;
     }
 }
