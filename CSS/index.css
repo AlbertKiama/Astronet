@@ -1525,4 +1525,30 @@ body{
     .service-description a {
         font-size: 14px;
     }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    .about-img {
+        margin: 10px 20px;
+    }
+    .about-p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .slogan-details span {
+        font-size: 36px;
+    }
+    .slogan-title {
+        font-size: 15px;
+    }
+    .slogan-details p {
+        font-size: 14px;
+    }
+    .slogan-details a {
+        font-size: 15px;
+    }
 }
