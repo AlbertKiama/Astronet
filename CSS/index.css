@@ -1551,4 +1551,112 @@ body{
     .slogan-details a {
         font-size: 15px;
     }
+
+    .team {
+        margin: 60px 0;
+    }
+    .team-content {
+        flex-direction: column;
+    }
+    .team-card {
+        width: 70%;
+        margin: 10px;
+    }
+    .team-img {
+        margin-bottom: 20px;
+        width: 120px;
+        height: 120px;
+    }
+    .team-card p {
+        text-align: center;
+        font-size: 14px;
+    }
+    .mate-socials i {
+        font-size: 12px;
+    }
+
+    .blogs {
+        margin: 60px 0;
+    }
+    .blog-content {
+        grid-template-columns: repeat(1, 3fr);
+        gap: 40px;
+        padding: 25px;
+    }
+    .blog-title {
+        font-size: 18px;
+    }
+    .blogger {
+        font-size: 14px;
+    }
+    .blog-date {
+        font-size: 12px;
+    }
+    .news {
+        font-size: 13px;
+    }
+    .blog-card p {
+        font-size: 15px;
+    }
+    .extra {
+        font-size: 14px;
+    }
+
+    .contact-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        .contact-form {
+            width: 100%;
+            padding: 25px;
+            h2 {
+                font-size: 22px;
+                margin-bottom: 22px;
+            }
+            .inputBox {
+                margin-top: 7px;
+                input, textarea {
+                    padding: 4px 10px;
+                    font-size: 15px;
+                    border-radius: 10px;
+                    &:focus ~ span,
+                    &:valid ~ span {
+                        font-size: 10px;
+                    }
+                }
+                span {
+                    font-size: 12px;
+                    margin: 12px 6px;
+                }
+                input[type="submit"] {
+                    font-size: 15px;
+                    padding: 7px;
+                }
+            }
+        }
+        .contact-details {
+            width: 100%;
+            padding: 25px;
+            .c-info {
+                padding: 10px 0;
+                h4 {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 12px;
+                }
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .getStarted {
+        padding: 20px 0;
+        margin-top: 20px;
+        .starter {
+            font-size: 22px;
+        }
+    }
 }
