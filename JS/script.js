@@ -24,6 +24,7 @@ let hello = document.getElementById('hello');
 
 /*===========Functionality for Testimonials==========*/       
 
+
 var dot = document.getElementsByClassName("dot");
 var slide = document.getElementById("slide");
 
