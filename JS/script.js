@@ -14,7 +14,7 @@ window.onscroll = function() {myFunction()};
     }
 
 /*===================Functionality for my home module=================*/
-
+/*
 let hello = document.getElementById('hello');
 
         window.addEventListener('scroll', function(){
