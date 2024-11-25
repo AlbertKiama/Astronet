@@ -13,15 +13,6 @@ window.onscroll = function() {myFunction()};
       }
     }
 
-/*===================Functionality for my home module=================*/
-/*
-let hello = document.getElementById('hello');
-
-        window.addEventListener('scroll', function(){
-            let value = window.scrollY;
-            hello.style.marginBottom = value * 1.56 + 'px';
-        });
-
 /*===========Functionality for Testimonials==========*/       
 
 

@@ -193,7 +193,7 @@ body{
     justify-content: center;
 }
 .hello h1 {
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 600;
     color: var(--first-color);
 }
@@ -791,12 +791,12 @@ body{
             margin-top: 10px;
             input, textarea {
                 width: 100%;
-                padding: 5px 10px;
+                padding: 10px;
                 font-size: 16px;
                 margin: 10px 0;
                 border: 1px solid #7070709f;
                 box-sizing: border-box;
-                border-radius: 15px;
+                border-radius: 5px;
                 outline: none;
                 resize: vertical;
                 background-color: transparent;
@@ -804,15 +804,15 @@ body{
                 &:valid ~ span {
                     color: var(--third-color);
                     font-size: 12px;
-                    transform: translateY(-20px);
+                    transform: translateY(-25px);
                 }
             }
             span {
                 position: absolute;
                 left: 0;
-                padding: 5px 0;
-                font-size: 14px;
-                margin: 10px 13px;
+                padding: 10px 0;
+                font-size: 16px;
+                margin: 10px;
                 pointer-events: none;
                 transition: 0.5s;
                 color: #666;
@@ -822,7 +822,7 @@ body{
                 background: var(--third-color);
                 color: #ffffff;
                 border: none;
-                border-radius: 10px;
+                border-radius: 5px;
                 cursor: pointer;
                 padding: 10px;
                 font-size: 16px;
@@ -834,7 +834,7 @@ body{
         width: 50%;
         padding: 60px 40px;
         .c-info {
-            padding: 30px 0;
+            padding: 15px 0;
             h4 {
                 font-size: 18px;
                 font-weight: 500;
