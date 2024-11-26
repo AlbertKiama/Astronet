@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Condensed&display=swap');
+
+:root {
+    --first-color: #d8dfe2;
+    --second-color: #71adb5;
+    --third-color: #176d81;
+    --fourth-color: #0d3446;
+    --fifth-color: #7c146b;
+    --sixth-color: #242424;
+  }
+
+.wrapper {
+	padding: 80px 0;
+}
+.section-header {
+	padding-bottom: 15px;
+}
+.section-header h2 {
+	font-weight: 700;
+}
+.icon-area {
+	text-align: center;
+}
+.icon-area i {
+	color: var(--third-color);
+	font-size: 80px;
+	margin-bottom: 20px;
+}
+.content-swiper p {
+	width: 60%;
+	margin: auto;
+	font-size: 17px;
+    font-weight: 300;
+    color: var(--sixth-color);
+}
+.img-area {
+	width: 150px;
+	height: 150px;
+	display: block;
+	margin: auto;
+	overflow: hidden;
+	border: 5px inset var(--third-color);
+	border-radius: 50%;
+	margin-bottom: 30px;
+}
+.img-area img {
+	width: 100%;
+}
+.content-swiper h5 {
+	font-weight: 900;
+	margin-top: 15px;
+}
+.carousel-indicators {
+	bottom: -80px;
+}
+.carousel-indicators [data-bs-target] {
+	width: 60px;
+	height: 10px;
+	background-color: var(--third-color);
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.content p {
+		width: 95%;
+	}
+}
+@media (max-width: 767px) {
+	.wrapper {
+		padding: 30px 0;
+	}
+	.content p {
+		width: 100%;
+	}
+	.icon-area i {
+		font-size: 50px;
+	}
+}
