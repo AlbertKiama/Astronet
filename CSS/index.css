@@ -966,7 +966,7 @@ body{
         font-size: 17px;
         margin: 0 10px;
     }
-    .container {
+    .container-main {
         padding: 0 6%;
     }
     .logo a img {
@@ -1021,7 +1021,7 @@ body{
     .hello h3 {
         font-size: 20px;
     }
-    .row {
+    .row-moto {
         grid-gap: 20px;
         padding: 40px 0;
     }
@@ -1214,13 +1214,13 @@ body{
     .contact-content .contact-details {
         padding: 80px 30px;
         .c-info {
-            padding: 10px 0;
+            padding: 6px 0;
             h4 {
-                font-size: 16px;
+                font-size: 1em;
                 padding: 5px 0;
             }
             p {
-                font-size: 14px;
+                font-size: 0.85em;
             }
         }
     }
@@ -1289,7 +1289,7 @@ body{
     .text {
         font-size: 14px;
     }
-    .container {
+    .container-main {
         padding: 0 3%;
     }
     .head {
@@ -1373,7 +1373,7 @@ body{
         font-size: 17px;
     }
 
-    .row {
+    .row-moto {
         display: grid;
         grid-template-columns: repeat(1, 3fr);
         grid-gap: 20px;
