@@ -15,7 +15,7 @@ window.onscroll = function() {myFunction()};
 
 /*===========Functionality for Testimonials==========*/       
 
-
+/*
 var dot = document.getElementsByClassName("dot");
 var slide = document.getElementById("slide");
 
