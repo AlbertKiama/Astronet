@@ -27,25 +27,25 @@ body{
 }
 .text {
     font-family: "Roboto", sans-serif;
-    font-size: 15px;
+    font-size: 1em;
     font-weight: 300;
     line-height: 1.5;
 }
 .head {
-    font-size: 40px;
+    font-size: 3em;
     font-weight: 300;
     color: #000;
-    margin-bottom: 18px;
+    margin-bottom: 4%;
 }
 .txt {
     font-family: "Roboto", sans-serif;
     color: var(--sixth-color);
-    font-size: 18px;
-    margin-bottom: 18px;
+    font-size: 1.02em;
+    margin-bottom: 4%;
 }
 .sub-title p {
     padding: 0 12%;
-    font-size: 18px;
+    font-size: 1.02em;
     font-weight: 300;
     line-height: 1.5;
 }
@@ -55,7 +55,7 @@ body{
 .contacts-main {
     color: #fff;
     background-color: var(--fourth-color);
-    padding: 10px 0;
+    padding: 1% 0;
 }
 .contacts {
     display: flex;
@@ -68,12 +68,12 @@ body{
     justify-content: center;
 }
 .contact span {
-    font-size: 19px;
+    font-size: 1.03em;
 }
 .email {
-    margin: 0 17px 0 7px;
+    margin: 0 1em 0 .5em;
     color: var(--second-color);
-    font-size: 13px;
+    font-size: 0.875em;
 }
 .socials {
     display: flex;
@@ -85,8 +85,8 @@ body{
 }
 .socials i {
     color: var(--second-color);
-    font-size: 19px;
-    margin: 0 10px;
+    font-size: 1.03em;
+    margin: 0 1em;
 }
 .socials i:hover {
     color: var(--fifth-color);
@@ -98,13 +98,13 @@ body{
   }
 .header {
     background: var(--first-color);
-    padding: 10px 0;
+    padding: 1.25em 0;
     z-index: 9999;
     box-shadow: 0 5px 20px var(--fourth-color);
 }
 .material {
     color: var(--fourth-color);
-    font-size: 18px;
+    font-size: 1.02em;
     padding-top: 5px;
 }
 .nav {
@@ -114,7 +114,7 @@ body{
     position: relative;
 }
 .logo a img {
-    height: 60px;
+    height: 4em;
     margin-left: -5px;
 }
 .nav-menu {
@@ -123,7 +123,7 @@ body{
     justify-content: center;
 }
 .nav-item {
-    font-size: 15px;
+    font-size: 1em;
     list-style-type: none;
     margin-right: 2.3em;
     font-weight: 300;
@@ -136,11 +136,11 @@ body{
 .nav-link::after {
     content: '';
     width: 0;
-    height: 3px;
+    height: 2px;
     background: var(--fifth-color);
     position: absolute;
     left: 0;
-    bottom: -3px;
+    bottom: -2px;
     transition: 0.5s;
 }
 .nav-link:hover::after {
@@ -193,14 +193,15 @@ body{
     justify-content: center;
 }
 .hello h1 {
-    font-size: 80px;
+    font-size: 5.2em;
     font-weight: 600;
     color: var(--first-color);
 }
 .hello h3 {
-    font-size: 22px;
+    font-size: 1.5em;
     font-weight: 300;
-    margin: 10px 0;
+    line-height: 1.5em;
+    margin: 3% 0;
     color: var(--first-color);
 }
 .hello h3 span {
@@ -210,8 +211,8 @@ body{
 .hello a {
     text-decoration: none;
     width: fit-content;
-    padding: 5px 34px;
-    margin-top: 20px;
+    padding: .5em 2em;
+    margin-top: 4%;
     color: var(--first-color);
     background-color: var(--fifth-color);
     border-radius: 10px;
@@ -419,80 +420,6 @@ body{
     color: var(--second-color);
 }
 
-/*===================================testimony=================*/
-
-.mySwiper {
-    width: 900px;
-    height: 280px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%,10%);
-}
-.testimonials {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.user-text p {
-    color: var(--fourth-color);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 22px;
-    font-weight: 200;
-    line-height: 1.8;
-    text-align: center;
-}
-.details {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-}
-.user-img {
-    object-fit: contain;
-    width: 50px;
-    height: 50px;
-    margin-right: 26px;
-    
-}
-.user-img img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-.slide-row {
-    display: flex;
-    width: 3600px;
-    transition: 0.5s;
-}
-.slide-col {
-    width: 900px;
-    height: 280px;
-    position: relative;
-}
-.name {
-    font-size: 15px;
-    line-height: 28px;
-    font-weight: 300;
-}
-.indicator {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -50px;
-}
-.dot {
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    margin: 4px;
-    border-radius: 15px;
-    background-color: var(--third-color);
-    cursor: pointer;
-    transition: .5s;
-}
-.active {
-    width: 25px;
-}
 /*==============================Services=======================*/
 .services {
     margin-top: 170px;
@@ -1508,21 +1435,6 @@ body{
         font-size: 13px;
         margin-bottom: 8px;
     }
-
-    .mySwiper {
-        height: 300px;
-    }
-    .user-text p {
-        font-size: 16px;
-        padding: 0 25%;
-    }
-    .slide-col {
-        height: 300px;
-    }
-    .indicator {
-        bottom: -10px;
-    }
-
     .services {
         margin-top: 100px;
     }
