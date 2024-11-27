@@ -270,10 +270,9 @@ body{
     justify-content: center;
     align-items: center;
 }
-.row-cont ul li {
+.row-cont ul li, p {
     display: block;
     font-size: 15px;
-    text-indent: 5px;
     margin-bottom: 8px;
     justify-content: center;
     align-items: center;
