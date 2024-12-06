@@ -19,6 +19,7 @@ html {
   }
 body{
     min-height: 100vh;
+    min-width: 1024px;
     background-color: var(--first-color);
     position: relative;
 }
@@ -45,7 +46,7 @@ body{
 }
 .sub-title p {
     padding: 0 12%;
-    font-size: 1.02em;
+    font-size: 1.25em;
     font-weight: 300;
     line-height: 1.5;
 }
@@ -140,7 +141,7 @@ body{
     background: var(--fifth-color);
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: 0;
     transition: 0.5s;
 }
 .nav-link:hover::after {
@@ -487,12 +488,11 @@ body{
     margin-right: auto;
 }
 .about-p {
-    font-size: 17px;
-    font-weight: 270;
-    line-height: 1.4;
-    letter-spacing: 1.2px;
     max-width: 90%;
     margin-bottom: 30px;
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 1.5;
 }
 .slogan {
     display: flex;
@@ -546,6 +546,10 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0 10px 0 0;
+}
+.team-card p {
+    text-align: center;
+    max-width: 80%;
 }
 .team-img {
     width: 150px;
@@ -652,7 +656,7 @@ body{
 .blogger {
     font-size: 15px;
     color: var(--sixth-color);
-    margin-right: 6px;
+    margin: 6px 6px 6px 0;
     font-weight: 200;
 }
 .dot-1 {
@@ -664,10 +668,10 @@ body{
     background-color: #5e5e5e;
 }
 .blog-date {
-    font-size: 13px;
+    font-size: 14px;
     color: var(--sixth-color);
     font-weight: 200;
-    margin: 6px;
+    margin: 0 6px;
 }
 .news {
     margin-left: 6px;
@@ -813,7 +817,6 @@ body{
         height: 280px;
         .f-col {
             flex: 1;
-            margin: 16px 10px;
             p {
                 font-size: 15px;
                 font-weight: 250;
@@ -827,12 +830,12 @@ body{
             justify-content: space-evenly;
             align-items: flex-start;
             flex: 3;
-            margin: 16px 10px;
             .f-col-1 ul {
                 flex: 1;
+                margin-left: -18%;
                 list-style-type: none;
                 li {
-                    margin-bottom: 6px;
+                    margin-bottom: 10px;
                     a {
                         text-decoration: none;
                         color: #777;
@@ -846,9 +849,10 @@ body{
             .f-col-2 ul {
                 display: flex;
                 flex: 1;
-                align-items: center;
+                align-items: flex-start;
                 justify-content: space-evenly;
                 list-style-type: none;
+                margin-left: -18%;
                 li {
                     padding-right: 35px;
                     a {
@@ -906,7 +910,6 @@ body{
                         }
                     }
                 }
-           /* } */
         }
     }
 }
@@ -929,6 +932,9 @@ body{
     color: #9b9b9b;
     line-height: 20px;
     text-align: center;
+    span {
+        color: var(--third-color);
+    }
 }
 
 /*==========================Media responsiveness===========================*/
@@ -1537,9 +1543,8 @@ body{
             .inputBox {
                 margin-top: 7px;
                 input, textarea {
-                    padding: 4px 10px;
-                    font-size: 15px;
-                    border-radius: 10px;
+                    padding: 8px;
+                    font-size: 14px;
                     &:focus ~ span,
                     &:valid ~ span {
                         font-size: 10px;
@@ -1547,7 +1552,7 @@ body{
                 }
                 span {
                     font-size: 12px;
-                    margin: 12px 6px;
+                    padding: 8px 0;
                 }
                 input[type="submit"] {
                     font-size: 15px;
